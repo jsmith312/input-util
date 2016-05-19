@@ -40,7 +40,10 @@ func ChooseNewGroups() bool {
 }
 
 //InputGenre has user specify what genre to query for groups
-func InputGenre(numGroups int) string {
-	// TODO
-	return ""
+// ex, rock,hiphop
+func InputGenre() string {
+	fmt.Println("Please supply a comma separated query of genres")
+	opt := ""
+	fmt.Scanf("%s", &opt)
+	return opt
 }
