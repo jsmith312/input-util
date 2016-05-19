@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/jsmith312/soundcloud/track"
+	sc "github.com/jsmith312/soundcloud-api"
 )
 
 //ChooseTrackName chooses a track name from the given list
-func ChooseTrackName(tracks []track.Track) track.Track {
-	var tmap = make(map[string]track.Track)
+func ChooseTrackName(tracks []sc.Track) sc.Track {
+	var tmap = make(map[string]sc.Track)
 	fmt.Println("Choose track name:")
 	var count int
 	for _, track := range tracks {
